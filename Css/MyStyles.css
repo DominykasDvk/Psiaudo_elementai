@@ -1,0 +1,120 @@
+/*psiaudo klases*/
+ input:focus{
+  color: rgb(204, 0, 204);
+  background: yellow;
+}
+.gabaliukas2:active{
+  color: rgb(255, 0, 0);
+}
+ a:visited{
+  color: red;
+}
+.gabaliukas4:hover{
+  color: green;
+}
+/*psiaudo klases*/
+.raudonas_tekstas1 p:before{
+  content:"tekstas prieš";
+    color:red;
+}
+.raudonas_tekstas2 p:after{
+ content:" tekstas po";
+   color:red;
+}
+.paveiksliukas1 p:before{
+ content: url("../Images/cottage.png");
+}
+.paveiksliukas2 p:after{
+ content: url("../Images/cottage.png");
+}
+.brukšnys1 p:before{
+  content: " ";
+  background: green;
+  width: 150px;
+  height: 10px;
+  display: inline-block;
+}
+.brukšnys2 p:after{
+  content: " ";
+  background: green;
+  width: 150px;
+  height: 10px;
+  display: inline-block;
+}
+/*psiaudo irinkimas*/
+#isrinkimas::selection{
+  color: gold;
+  background-color: rgb(0, 153, 51);
+}
+/*psiaudo first-first_letter*/
+#first_letter::first-letter{
+  font-size: 30px;
+  color: tomato;
+}
+/*psiaudo pirma eilute*/
+#pirma_eilute::first-line{
+  background-color: rgb(255, 128, 0);
+}
+/*psiaudo child selectoriai*/
+#odd:nth-child(odd){
+  background-color: rgb(0, 204, 0);
+}
+#even:nth-child(even){
+  background-color: rgb(0, 204, 0);
+}
+#chosen:nth-child(4n+3){
+  text-decoration: underline;
+}
+#chosen:nth-child(4n+4){
+  color: tomato;
+}
+#chosen:nth-child(4n+5){
+  background-color: rgb(0, 204, 0);
+}
+#first:first-of-type{
+  color: rgb(0, 204, 0);
+}
+#last:last-child{
+  color: rgb(0, 204, 0);
+}
+/*perejimu blokai*/
+/*Spalva*/
+.color {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  -webkit-transition: background-color 1.5s ease-out;
+  -moz-transition: background-color 1.5s ease-out;
+  -o-transition: background-color 1.5s ease-out;
+  transition: background-color 1.5s ease-out;
+}
+.color:hover {
+  background-color: green;
+}
+/*ilgis*/
+.width{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  -webkit-transition: width 1s ease-out;
+  -moz-transition: width 1s ease-out;
+  -o-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+}
+.width:hover{
+  width: 400px;
+}
+/*Pozicija*/
+.position{
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  -webkit-transition: width 1s ease-out;
+  -moz-transition: width 1s ease-out;
+  -o-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+}
+.position:hover{
+  background-color: blue;
+  margin-left: 30px;
+}
